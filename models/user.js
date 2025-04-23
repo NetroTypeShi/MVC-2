@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
-import { sequelize } from "db/sequelize.js";
-import { table } from "console";
-const User = sequelize.define("user", {
+import { sequelize } from "../db/sequelize.js";
+
+export const User = sequelize.define("user", {
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
