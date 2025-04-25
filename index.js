@@ -24,7 +24,8 @@ app.get('/', async (req, res) => {
     
     res.render("test", {
         tittle: "Test nunjucks",
-        desc : "probando nunjucks"
+        desc : "probando nunjucks",
+        users
     })
 });
 
