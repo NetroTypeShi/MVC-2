@@ -11,6 +11,15 @@ const env = nunjucks.configure('views', {
 
 app.set('view engine', 'njk');
 
+app.get('/users', (req, res) => {
+    const users = [/* Lista de usuarios desde la base de datos */];
+    res.render('usersTable', { users });
+});
+
+app.get('/auth', (req, res) => {
+    res.render('register');
+});
+
 app.get('/', async (req, res) => {
     const usersRaw = await User.findAll();
     const users = usersRaw.map(user => {
