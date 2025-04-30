@@ -3,6 +3,7 @@
   "dependencies": {
     "connect-sqlite3": "^0.9.15",
     "express": "^5.1.0",
+    "express-session": "^1.18.1",
     "nunjucks": "^3.2.4",
     "sequelize": "^6.37.7"
   }
